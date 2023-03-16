@@ -1,0 +1,15 @@
+C:\Users\Admin\Desktop\ban goc\WebsiteBanDienThoai\WebsiteBanDienThoai\Backup\WebSiteBanDienThoaiDiDong\bin\WebSiteBanDienThoaiDiDong.dll.config
+C:\Users\Admin\Desktop\ban goc\WebsiteBanDienThoai\WebsiteBanDienThoai\Backup\WebSiteBanDienThoaiDiDong\bin\WebSiteBanDienThoaiDiDong.pdb
+C:\Users\Admin\Desktop\ban goc\WebsiteBanDienThoai\WebsiteBanDienThoai\Backup\WebSiteBanDienThoaiDiDong\bin\EntityFramework.dll
+C:\Users\Admin\Desktop\ban goc\WebsiteBanDienThoai\WebsiteBanDienThoai\Backup\WebSiteBanDienThoaiDiDong\bin\EntityFramework.SqlServer.dll
+C:\Users\Admin\Desktop\ban goc\WebsiteBanDienThoai\WebsiteBanDienThoai\Backup\WebSiteBanDienThoaiDiDong\bin\EntityFramework.xml
+C:\Users\Admin\Desktop\ban goc\WebsiteBanDienThoai\WebsiteBanDienThoai\Backup\WebSiteBanDienThoaiDiDong\bin\EntityFramework.SqlServer.xml
+C:\Users\Admin\Desktop\ban goc\WebsiteBanDienThoai\WebsiteBanDienThoai\Backup\WebSiteBanDienThoaiDiDong\obj\Debug\WebSiteBanDienThoai.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\ban goc\WebsiteBanDienThoai\WebsiteBanDienThoai\Backup\WebSiteBanDienThoaiDiDong\obj\Debug\WebSiteBanDienThoai.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\ban goc\WebsiteBanDienThoai\WebsiteBanDienThoai\Backup\WebSiteBanDienThoaiDiDong\obj\Debug\WebSiteBanDienThoai.csproj.CopyComplete
+C:\Users\Admin\Desktop\ban goc\WebsiteBanDienThoai\WebsiteBanDienThoai\Backup\WebSiteBanDienThoaiDiDong\obj\Debug\WebSiteBanDienThoaiDiDong.dll
+C:\Users\Admin\Desktop\ban goc\WebsiteBanDienThoai\WebsiteBanDienThoai\Backup\WebSiteBanDienThoaiDiDong\obj\Debug\WebSiteBanDienThoaiDiDong.pdb
+C:\Users\Admin\Desktop\ban goc\WebsiteBanDienThoai\WebsiteBanDienThoai\WebSiteBanDienThoaiDiDong\obj\Debug\WebSiteBanDienThoai.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\ban goc\WebsiteBanDienThoai\WebsiteBanDienThoai\WebSiteBanDienThoaiDiDong\obj\Debug\WebSiteBanDienThoai.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\ban goc\WebsiteBanDienThoai\WebsiteBanDienThoai\WebSiteBanDienThoaiDiDong\obj\Debug\WebSiteBanDienThoaiDiDong.dll
+C:\Users\Admin\Desktop\ban goc\WebsiteBanDienThoai\WebsiteBanDienThoai\WebSiteBanDienThoaiDiDong\obj\Debug\WebSiteBanDienThoaiDiDong.pdb

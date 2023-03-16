@@ -1,0 +1,22 @@
+E:\DO AN 3\WebSiteBanDienThoaiDiDong\WebSiteBanDienThoaiDiDong\bin\WebSiteBanDienThoaiDiDong.pdb
+E:\DO AN 3\WebSiteBanDienThoaiDiDong\WebSiteBanDienThoaiDiDong\obj\Debug\ResolveAssemblyReference.cache
+E:\DO AN 3\WebSiteBanDienThoaiDiDong\WebSiteBanDienThoaiDiDong\obj\Debug\WebSiteBanDienThoaiDiDong.dll
+E:\DO AN 3\WebSiteBanDienThoaiDiDong\WebSiteBanDienThoaiDiDong\obj\Debug\WebSiteBanDienThoaiDiDong.pdb
+E:\DO AN 3\Bai hoan chinh\WebSiteBanDienThoaiDiDong\WebSiteBanDienThoaiDiDong\bin\WebSiteBanDienThoaiDiDong.pdb
+E:\DO AN 3\Bai hoan chinh\WebSiteBanDienThoaiDiDong\WebSiteBanDienThoaiDiDong\obj\Debug\ResolveAssemblyReference.cache
+E:\DO AN 3\Bai hoan chinh\WebSiteBanDienThoaiDiDong\WebSiteBanDienThoaiDiDong\obj\Debug\WebSiteBanDienThoaiDiDong.dll
+E:\DO AN 3\Bai hoan chinh\WebSiteBanDienThoaiDiDong\WebSiteBanDienThoaiDiDong\obj\Debug\WebSiteBanDienThoaiDiDong.pdb
+C:\Users\minhminh5121990\Desktop\WebSiteBanDienThoaiDiDong\WebSiteBanDienThoaiDiDong\bin\WebSiteBanDienThoaiDiDong.pdb
+C:\Users\minhminh5121990\Desktop\WebSiteBanDienThoaiDiDong\WebSiteBanDienThoaiDiDong\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\minhminh5121990\Desktop\WebSiteBanDienThoaiDiDong\WebSiteBanDienThoaiDiDong\obj\Debug\WebSiteBanDienThoaiDiDong.dll
+C:\Users\minhminh5121990\Desktop\WebSiteBanDienThoaiDiDong\WebSiteBanDienThoaiDiDong\obj\Debug\WebSiteBanDienThoaiDiDong.pdb
+E:\Đồ án tốt nghiệp\Vân Anh DATN\WebSiteBanDienThoaiDiDong\WebSiteBanDienThoaiDiDong\bin\WebSiteBanDienThoaiDiDong.pdb
+E:\Đồ án tốt nghiệp\Vân Anh DATN\WebSiteBanDienThoaiDiDong\WebSiteBanDienThoaiDiDong\obj\Debug\ResolveAssemblyReference.cache
+E:\Đồ án tốt nghiệp\Vân Anh DATN\WebSiteBanDienThoaiDiDong\WebSiteBanDienThoaiDiDong\obj\Debug\WebSiteBanDienThoaiDiDong.dll
+E:\Đồ án tốt nghiệp\Vân Anh DATN\WebSiteBanDienThoaiDiDong\WebSiteBanDienThoaiDiDong\obj\Debug\WebSiteBanDienThoaiDiDong.pdb
+D:\DATA\HK1-nam-3\LTW\[Sharecode.vn] Full code web ban dien thoai di dong ASP.net + bao cao\Code\WebSiteBanDienThoaiDiDong\bin\WebSiteBanDienThoaiDiDong.pdb
+D:\DATA\HK1-nam-3\LTW\[Sharecode.vn] Full code web ban dien thoai di dong ASP.net + bao cao\Code\WebSiteBanDienThoaiDiDong\obj\Debug\WebSiteBanDienThoaiDiDong.csprojAssemblyReference.cache
+D:\DATA\HK1-nam-3\LTW\[Sharecode.vn] Full code web ban dien thoai di dong ASP.net + bao cao\Code\WebSiteBanDienThoaiDiDong\obj\Debug\WebSiteBanDienThoaiDiDong.csproj.CoreCompileInputs.cache
+D:\DATA\HK1-nam-3\LTW\[Sharecode.vn] Full code web ban dien thoai di dong ASP.net + bao cao\Code\WebSiteBanDienThoaiDiDong\obj\Debug\WebSiteBanDienThoaiDiDong.csproj.CopyComplete
+D:\DATA\HK1-nam-3\LTW\[Sharecode.vn] Full code web ban dien thoai di dong ASP.net + bao cao\Code\WebSiteBanDienThoaiDiDong\obj\Debug\WebSiteBanDienThoaiDiDong.dll
+D:\DATA\HK1-nam-3\LTW\[Sharecode.vn] Full code web ban dien thoai di dong ASP.net + bao cao\Code\WebSiteBanDienThoaiDiDong\obj\Debug\WebSiteBanDienThoaiDiDong.pdb

@@ -1,0 +1,404 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MyDataModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="tblChucNang">
+    <Key>
+      <PropertyRef Name="IDChucNang" />
+    </Key>
+    <Property Name="IDChucNang" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TenChucNang" Type="nvarchar" MaxLength="50" />
+    <Property Name="Mota" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tblComment">
+    <Key>
+      <PropertyRef Name="CommentID" />
+      <PropertyRef Name="IDDT" />
+    </Key>
+    <Property Name="CommentID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IDDT" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="TieuDe" Type="nvarchar" MaxLength="250" />
+    <Property Name="Comments" Type="ntext" />
+    <Property Name="TaiKhoan" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="NgayDang" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tblDienThoai">
+    <Key>
+      <PropertyRef Name="IDDT" />
+    </Key>
+    <Property Name="IDDT" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="IDNSX" Type="int" Nullable="false" />
+    <Property Name="TenDT" Type="nvarchar" MaxLength="250" Nullable="false" />
+    <Property Name="Gia" Type="money" />
+    <Property Name="SoLuong" Type="int" />
+    <Property Name="KichThuoc" Type="nvarchar" MaxLength="230" />
+    <Property Name="TrongLuong" Type="nvarchar" MaxLength="230" />
+    <Property Name="Camera" Type="nvarchar" MaxLength="250" />
+    <Property Name="TheNho" Type="tinyint" />
+    <Property Name="CongNghe3G" Type="tinyint" />
+    <Property Name="Wifi" Type="tinyint" />
+    <Property Name="Java" Type="tinyint" />
+    <Property Name="Pin" Type="nvarchar" MaxLength="250" />
+    <Property Name="ThoiGianCho" Type="nvarchar" MaxLength="250" />
+    <Property Name="ThoiGianDamThoai" Type="nvarchar" MaxLength="250" />
+    <Property Name="BaoHanh" Type="nvarchar" MaxLength="250" />
+    <Property Name="PhuKien" Type="nvarchar(max)" />
+    <Property Name="HinhAnh" Type="nvarchar" MaxLength="250" />
+    <Property Name="HinhAnh2" Type="nvarchar" MaxLength="250" />
+    <Property Name="HinhAnh3" Type="nvarchar" MaxLength="250" />
+    <Property Name="HinhAnh4" Type="nvarchar" MaxLength="250" />
+    <Property Name="LuotXem" Type="int" />
+    <Property Name="NCC" Type="int" />
+  </EntityType>
+  <EntityType Name="tblDongDH">
+    <Key>
+      <PropertyRef Name="IDDonHang" />
+      <PropertyRef Name="IDDT" />
+    </Key>
+    <Property Name="IDDonHang" Type="int" Nullable="false" />
+    <Property Name="IDDT" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="SLMua" Type="int" />
+    <Property Name="Gia" Type="money" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'MyData.dbo.tblDongPN' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tblDongPN">
+    <Key>
+      <PropertyRef Name="IDDPN" />
+    </Key>
+    <Property Name="IDDPN" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SoPN" Type="int" />
+    <Property Name="IDDT" Type="nvarchar" MaxLength="250" />
+    <Property Name="TenDT" Type="nvarchar" MaxLength="250" />
+    <Property Name="SoLuong" Type="int" />
+    <Property Name="GiaNhap" Type="money" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'MyData.dbo.tblDongPX' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tblDongPX">
+    <Key>
+      <PropertyRef Name="SoPX" />
+      <PropertyRef Name="IDDT" />
+    </Key>
+    <Property Name="SoPX" Type="int" Nullable="false" />
+    <Property Name="IDDT" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="SoLuongMua" Type="int" />
+    <Property Name="GiaBan" Type="money" />
+  </EntityType>
+  <EntityType Name="tblDonHang">
+    <Key>
+      <PropertyRef Name="IDDonHang" />
+    </Key>
+    <Property Name="IDDonHang" Type="int" Nullable="false" />
+    <Property Name="TaiKhoan" Type="nvarchar" MaxLength="50" />
+    <Property Name="MaKH" Type="int" />
+    <Property Name="NgayLap" Type="nvarchar" MaxLength="50" />
+    <Property Name="DiaChiGiao" Type="nvarchar" MaxLength="50" />
+    <Property Name="TongTien" Type="money" />
+    <Property Name="TrangThai" Type="tinyint" />
+    <Property Name="NgayHuy" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tblKhachHang">
+    <Key>
+      <PropertyRef Name="MaKH" />
+    </Key>
+    <Property Name="MaKH" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TaiKhoan" Type="nvarchar" MaxLength="20" />
+    <Property Name="MatKhau" Type="nvarchar" MaxLength="50" />
+    <Property Name="TenKH" Type="nvarchar" MaxLength="50" />
+    <Property Name="DiaChi" Type="nvarchar" MaxLength="250" />
+    <Property Name="MaTK" Type="nvarchar" MaxLength="50" />
+    <Property Name="SoTien" Type="money" />
+  </EntityType>
+  <EntityType Name="tblLienHe">
+    <Key>
+      <PropertyRef Name="MaLienHe" />
+    </Key>
+    <Property Name="MaLienHe" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="HoTen" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Email" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="SDT" Type="nvarchar" MaxLength="50" />
+    <Property Name="NoiDung" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'MyData.dbo.tblLuotTruyCap' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tblLuotTruyCap">
+    <Key>
+      <PropertyRef Name="SoNguoi" />
+    </Key>
+    <Property Name="SoNguoi" Type="bigint" Nullable="false" />
+    <Property Name="Ngay" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tblNCC">
+    <Key>
+      <PropertyRef Name="IDNCC" />
+    </Key>
+    <Property Name="IDNCC" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TenNCC" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="GioiThieu" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="tblNguoiBan">
+    <Key>
+      <PropertyRef Name="MaNV" />
+    </Key>
+    <Property Name="MaNV" Type="int" Nullable="false" />
+    <Property Name="TenNV" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tblNguoiSuDung">
+    <Key>
+      <PropertyRef Name="TenDangNhap" />
+    </Key>
+    <Property Name="TenDangNhap" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="MatKhau" Type="nvarchar" MaxLength="30" Nullable="false" />
+    <Property Name="Email" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="HoTen" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="SDT" Type="nvarchar" MaxLength="50" />
+    <Property Name="DiaChi" Type="nvarchar" MaxLength="50" />
+    <Property Name="Quyen" Type="tinyint" />
+  </EntityType>
+  <EntityType Name="tblNSX">
+    <Key>
+      <PropertyRef Name="IDNSX" />
+    </Key>
+    <Property Name="IDNSX" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TenNSX" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="GioiThieu" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="tblPhieuNhap">
+    <Key>
+      <PropertyRef Name="SoPN" />
+    </Key>
+    <Property Name="SoPN" Type="int" Nullable="false" />
+    <Property Name="NgayNhap" Type="datetime" />
+    <Property Name="MaNCC" Type="int" />
+  </EntityType>
+  <EntityType Name="tblPhieuXuat">
+    <Key>
+      <PropertyRef Name="SoPX" />
+      <PropertyRef Name="MaKH" />
+    </Key>
+    <Property Name="SoPX" Type="int" Nullable="false" />
+    <Property Name="MaKH" Type="int" Nullable="false" />
+    <Property Name="NgayXuat" Type="datetime" />
+    <Property Name="DiaChiGiao" Type="nvarchar" MaxLength="250" />
+    <Property Name="TongTien" Type="money" />
+    <Property Name="MaNV" Type="int" />
+  </EntityType>
+  <EntityType Name="tblQuyen">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TenDangNhap" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="IDChucNang" Type="int" Nullable="false" />
+    <Property Name="MoTa" Type="nvarchar" MaxLength="250" />
+    <Property Name="Page" Type="nvarchar" MaxLength="50" />
+    <Property Name="Macdinh" Type="int" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'MyData.dbo.tblTemp' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tblTemp">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="SOPN" Type="int" />
+    <Property Name="IDDT" Type="nchar" MaxLength="10" />
+    <Property Name="TenDT" Type="nvarchar" MaxLength="250" />
+    <Property Name="SoLuong" Type="int" />
+    <Property Name="GiaNhap" Type="money" />
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_tblDienThoai_tblNSX">
+    <End Role="tblNSX" Type="Self.tblNSX" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="tblDienThoai" Type="Self.tblDienThoai" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblNSX">
+        <PropertyRef Name="IDNSX" />
+      </Principal>
+      <Dependent Role="tblDienThoai">
+        <PropertyRef Name="IDNSX" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblDongDH_tblDienThoai">
+    <End Role="tblDienThoai" Type="Self.tblDienThoai" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="tblDongDH" Type="Self.tblDongDH" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblDienThoai">
+        <PropertyRef Name="IDDT" />
+      </Principal>
+      <Dependent Role="tblDongDH">
+        <PropertyRef Name="IDDT" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblDongDH_tblDonHang">
+    <End Role="tblDonHang" Type="Self.tblDonHang" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="tblDongDH" Type="Self.tblDongDH" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblDonHang">
+        <PropertyRef Name="IDDonHang" />
+      </Principal>
+      <Dependent Role="tblDongDH">
+        <PropertyRef Name="IDDonHang" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblPhieuNhap_tblNCC">
+    <End Role="tblNCC" Type="Self.tblNCC" Multiplicity="0..1" />
+    <End Role="tblPhieuNhap" Type="Self.tblPhieuNhap" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblNCC">
+        <PropertyRef Name="IDNCC" />
+      </Principal>
+      <Dependent Role="tblPhieuNhap">
+        <PropertyRef Name="MaNCC" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblPhieuXuat_tblKhachHang">
+    <End Role="tblKhachHang" Type="Self.tblKhachHang" Multiplicity="1" />
+    <End Role="tblPhieuXuat" Type="Self.tblPhieuXuat" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblKhachHang">
+        <PropertyRef Name="MaKH" />
+      </Principal>
+      <Dependent Role="tblPhieuXuat">
+        <PropertyRef Name="MaKH" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblPhieuXuat_tblNguoiBan">
+    <End Role="tblNguoiBan" Type="Self.tblNguoiBan" Multiplicity="0..1" />
+    <End Role="tblPhieuXuat" Type="Self.tblPhieuXuat" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblNguoiBan">
+        <PropertyRef Name="MaNV" />
+      </Principal>
+      <Dependent Role="tblPhieuXuat">
+        <PropertyRef Name="MaNV" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblQuyen_tblChucNang1">
+    <End Role="tblChucNang" Type="Self.tblChucNang" Multiplicity="1" />
+    <End Role="tblQuyen" Type="Self.tblQuyen" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblChucNang">
+        <PropertyRef Name="IDChucNang" />
+      </Principal>
+      <Dependent Role="tblQuyen">
+        <PropertyRef Name="IDChucNang" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tblQuyen_tblNguoiSuDung1">
+    <End Role="tblNguoiSuDung" Type="Self.tblNguoiSuDung" Multiplicity="1" />
+    <End Role="tblQuyen" Type="Self.tblQuyen" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tblNguoiSuDung">
+        <PropertyRef Name="TenDangNhap" />
+      </Principal>
+      <Dependent Role="tblQuyen">
+        <PropertyRef Name="TenDangNhap" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="MyDataModelStoreContainer">
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblChucNang" EntityType="Self.tblChucNang" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblComment" EntityType="Self.tblComment" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblDienThoai" EntityType="Self.tblDienThoai" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblDongDH" EntityType="Self.tblDongDH" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblDonHang" EntityType="Self.tblDonHang" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblKhachHang" EntityType="Self.tblKhachHang" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblLienHe" EntityType="Self.tblLienHe" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblNCC" EntityType="Self.tblNCC" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblNguoiBan" EntityType="Self.tblNguoiBan" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblNguoiSuDung" EntityType="Self.tblNguoiSuDung" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblNSX" EntityType="Self.tblNSX" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblPhieuNhap" EntityType="Self.tblPhieuNhap" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblPhieuXuat" EntityType="Self.tblPhieuXuat" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblQuyen" EntityType="Self.tblQuyen" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tblDongPN" EntityType="Self.tblDongPN" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tblDongPN].[IDDPN] AS [IDDPN], 
+    [tblDongPN].[SoPN] AS [SoPN], 
+    [tblDongPN].[IDDT] AS [IDDT], 
+    [tblDongPN].[TenDT] AS [TenDT], 
+    [tblDongPN].[SoLuong] AS [SoLuong], 
+    [tblDongPN].[GiaNhap] AS [GiaNhap]
+    FROM [dbo].[tblDongPN] AS [tblDongPN]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tblDongPX" EntityType="Self.tblDongPX" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tblDongPX].[SoPX] AS [SoPX], 
+    [tblDongPX].[IDDT] AS [IDDT], 
+    [tblDongPX].[SoLuongMua] AS [SoLuongMua], 
+    [tblDongPX].[GiaBan] AS [GiaBan]
+    FROM [dbo].[tblDongPX] AS [tblDongPX]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tblLuotTruyCap" EntityType="Self.tblLuotTruyCap" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tblLuotTruyCap].[SoNguoi] AS [SoNguoi], 
+    [tblLuotTruyCap].[Ngay] AS [Ngay]
+    FROM [dbo].[tblLuotTruyCap] AS [tblLuotTruyCap]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="tblTemp" EntityType="Self.tblTemp" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tblTemp].[SOPN] AS [SOPN], 
+    [tblTemp].[IDDT] AS [IDDT], 
+    [tblTemp].[TenDT] AS [TenDT], 
+    [tblTemp].[SoLuong] AS [SoLuong], 
+    [tblTemp].[GiaNhap] AS [GiaNhap], 
+    [tblTemp].[ID] AS [ID]
+    FROM [dbo].[tblTemp] AS [tblTemp]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK_tblDienThoai_tblNSX" Association="Self.FK_tblDienThoai_tblNSX">
+      <End Role="tblNSX" EntitySet="tblNSX" />
+      <End Role="tblDienThoai" EntitySet="tblDienThoai" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblDongDH_tblDienThoai" Association="Self.FK_tblDongDH_tblDienThoai">
+      <End Role="tblDienThoai" EntitySet="tblDienThoai" />
+      <End Role="tblDongDH" EntitySet="tblDongDH" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblDongDH_tblDonHang" Association="Self.FK_tblDongDH_tblDonHang">
+      <End Role="tblDonHang" EntitySet="tblDonHang" />
+      <End Role="tblDongDH" EntitySet="tblDongDH" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblPhieuNhap_tblNCC" Association="Self.FK_tblPhieuNhap_tblNCC">
+      <End Role="tblNCC" EntitySet="tblNCC" />
+      <End Role="tblPhieuNhap" EntitySet="tblPhieuNhap" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblPhieuXuat_tblKhachHang" Association="Self.FK_tblPhieuXuat_tblKhachHang">
+      <End Role="tblKhachHang" EntitySet="tblKhachHang" />
+      <End Role="tblPhieuXuat" EntitySet="tblPhieuXuat" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblPhieuXuat_tblNguoiBan" Association="Self.FK_tblPhieuXuat_tblNguoiBan">
+      <End Role="tblNguoiBan" EntitySet="tblNguoiBan" />
+      <End Role="tblPhieuXuat" EntitySet="tblPhieuXuat" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblQuyen_tblChucNang1" Association="Self.FK_tblQuyen_tblChucNang1">
+      <End Role="tblChucNang" EntitySet="tblChucNang" />
+      <End Role="tblQuyen" EntitySet="tblQuyen" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tblQuyen_tblNguoiSuDung1" Association="Self.FK_tblQuyen_tblNguoiSuDung1">
+      <End Role="tblNguoiSuDung" EntitySet="tblNguoiSuDung" />
+      <End Role="tblQuyen" EntitySet="tblQuyen" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,6 +1,0 @@
-D:\DATA\HK1-nam-3\LTW\BaoCaoLapTrinhWeb\WebsiteBanDienThoai\WebSiteBanDienThoaiDiDong\bin\WebSiteBanDienThoaiDiDong.pdb
-D:\DATA\HK1-nam-3\LTW\BaoCaoLapTrinhWeb\WebsiteBanDienThoai\WebSiteBanDienThoaiDiDong\obj\Debug\WebSiteBanDienThoai.csprojAssemblyReference.cache
-D:\DATA\HK1-nam-3\LTW\BaoCaoLapTrinhWeb\WebsiteBanDienThoai\WebSiteBanDienThoaiDiDong\obj\Debug\WebSiteBanDienThoai.csproj.CoreCompileInputs.cache
-D:\DATA\HK1-nam-3\LTW\BaoCaoLapTrinhWeb\WebsiteBanDienThoai\WebSiteBanDienThoaiDiDong\obj\Debug\WebSiteBanDienThoai.csproj.CopyComplete
-D:\DATA\HK1-nam-3\LTW\BaoCaoLapTrinhWeb\WebsiteBanDienThoai\WebSiteBanDienThoaiDiDong\obj\Debug\WebSiteBanDienThoaiDiDong.dll
-D:\DATA\HK1-nam-3\LTW\BaoCaoLapTrinhWeb\WebsiteBanDienThoai\WebSiteBanDienThoaiDiDong\obj\Debug\WebSiteBanDienThoaiDiDong.pdb

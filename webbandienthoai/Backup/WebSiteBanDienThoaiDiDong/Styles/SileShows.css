@@ -1,0 +1,65 @@
+﻿#wrapper
+{
+    width: 560px;
+    margin: auto;
+    padding: 0px;
+    position: relative;
+   
+}
+#slide
+{
+     width:560px;
+     height:150px;
+     padding:0px;
+     margin:auto;
+     position:absolute;
+     top:0px;
+ }
+ #slide img
+ {
+    width:560px;
+    height:150px;
+     margin:auto;
+    padding:0px;
+    display:none;
+ }
+#slide-nav
+{
+    width:560px;
+    height:150px;
+    padding:auto;
+    margin:0px;
+    position:absolute;
+    top:120px;
+    z-index:10;
+    float:right;
+    
+}
+#slide-nav 
+{
+    height: 20px
+}
+#slide-nav a
+{ 
+    background: #eee; 
+    margin-right: 4px; 
+    padding: 1px 5px; 
+    text-decoration: none; 
+    border: 2px solid green; 
+    color: green
+}
+#slide-nav a.activeSlide
+{
+    background: green; 
+    color: #fff
+}
+.KhungDetails
+{
+   width:565px;
+   height:auto;
+   border:1px solid #FFFFFF;
+   margin:auto;
+   padding:auto;
+    border: 1px solid #999999;
+    border-radius:3px;
+}
